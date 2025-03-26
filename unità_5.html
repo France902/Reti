@@ -20,7 +20,7 @@
           <a class="nav-link disabled" href="#">Unità 5</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Ritorna</a>
+            <a class="nav-link" onclick="window.location.href ='index.html'" style="cursor: pointer;">Ritorna</a>
           </li>
         <li class="nav-item">
             <a class="nav-link disabled" style="margin-left: 600px;"  href="#">Francesco Scicchitano   Emanuele Zannino</a>
@@ -29,10 +29,10 @@
       <br><br><br><br>
       <div class="row" style="margin-left: 10vw;">
         <div class="col-4">
-          <div class="card" style="width: 100rem; height: 3000px; border-radius: 10%;">
+          <div class="card" style="width: 100rem; max-height: 7000px; border-top-left-radius: 10%; border-top-right-radius: 10%;">
             <div class="card-body">
             <div class="card-body">
-              <h5 class="card-title" style="text-align: center; font-size: 50px;">Le reti informatiche</h5>
+              <h5 class="card-title" style="text-align: center; font-size: 50px;">Lezione 1<br>Introduzione al networking</h5>
               <br>
               <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Le reti informatiche sono sistemi complessi che permettono la comunicazione e la condivisione di dati tra dispositivi come computer, server, e altri dispositivi elettronici. Queste reti possono essere classificate in base alla loro estensione, alla tecnologia di trasmissione utilizzata e alla modalità di gestione del traffico. Le reti informatiche consentono di scambiare informazioni in tempo reale, supportano applicazioni come la navigazione su internet, il cloud computing e la comunicazione tramite e-mail.</p>
               <br>
@@ -44,7 +44,47 @@
               <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Le reti punto a punto (peer-to-peer) e broadcast sono due tipologie fondamentali di comunicazione nelle reti informatiche. Nelle reti punto a punto, ogni dispositivo agisce come un nodo autonomo, inviando e ricevendo dati da altri dispositivi senza la necessità di un server centrale. Questa architettura è utilizzata in applicazioni come il file sharing (ad esempio, BitTorrent), dove ogni nodo è sia un client che un server. Al contrario, le reti broadcast sono caratterizzate dalla trasmissione di un messaggio da una sorgente a tutti i dispositivi nella rete, come nel caso delle reti televisive o radiofoniche. In una rete broadcast, un solo invio di dati può essere ricevuto da tutti i nodi della rete, il che rende questa architettura efficiente per applicazioni come la diffusione di informazioni a livello di rete locale o globale.</p>
               <br>
               <img src="punto_broadcast.jpg" style="margin-left: 300px;" alt="">
+              <br><br><br><br>
+              <p class="card-title" style="text-align: center; font-size: 50px;">Topologie di rete principali</p>
               <br>
+              <img src="topologie.png" style="margin-left: 430px; width: 700px; height: 300px;" alt="">
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Topologia a stella: In questa configurazione, tutti i dispositivi sono collegati a un nodo centrale, chiamato switch o hub. La comunicazione avviene tramite questo nodo centrale, che gestisce i dati tra i dispositivi.
+              </p>
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Topologia ad anello: In un anello, ogni dispositivo è collegato al successivo formando un ciclo. I dati viaggiano in un solo senso (o in entrambi, a seconda della variante) attorno all'anello fino a raggiungere la destinazione.
+              </p>
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Topologia a bus: Tutti i dispositivi sono collegati a un unico cavo principale (chiamato "bus"). I dati viaggiano lungo il bus e vengono ricevuti da tutti i dispositivi, ma solo quello con l'indirizzo corretto li processa.
+              </p>
+              <br><br><br><br>
+              <p class="card-title" style="text-align: center; font-size: 50px;">Reti in ordine di grandezza</p>
+              <br>
+              <img src="tipi-reti.png" style="margin-left: 320px; width: 900px; height: 400px;" alt="">
+              <br>
+              <br><br><br><br><br><br>
+              <p class="card-title" style="text-align: center; font-size: 50px;">Lezione 2<br> Il trasferimento dell'informazione</p>
+              <br>
+              <br>
+              <p class="card-title" style="text-align: center; font-size: 50px;">Cos'è un protocollo?</p>
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Un protocollo è un insieme di regole e convenzioni che definiscono come i dispositivi in una rete devono comunicare tra loro. Queste regole specificano come i dati devono essere formattati, trasmessi, ricevuti e gestiti, garantendo che tutte le parti coinvolte possano "capirsi" e scambiarsi informazioni in modo efficace e sicuro.
+              </p>
+                <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Gli elementi di comunicazione che seguono i protocolli possono essere quelli di connessione, trasferimento dati o commutazione.</p>
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Ogni elemento può far parte della categoria server(S) o client(C).</p>
+              <br>
+              <img src="protocolli-di-rete.jpg" style="margin-left: 320px; width: 900px; height: 600px;" alt="">
+              <br><br><br><br>
+              <p class="card-title" style="text-align: center; font-size: 50px;">Packet switching</p>
+              <br>
+              <p class="card-text" style="margin-top: 30px; margin-left: 30px; font-size: 24px;">Packet switching (commutazione a pacchetto) è una tecnica utilizzata nelle reti di telecomunicazioni, come Internet, per trasmettere i dati in forma di pacchetti. In questo sistema, i dati vengono suddivisi in piccole porzioni chiamate pacchetti, che vengono inviati attraverso la rete in modo indipendente l'uno dall'altro. Ogni pacchetto può seguire un percorso diverso per arrivare alla destinazione, dove i pacchetti vengono poi riassemblati nell'ordine corretto. 
+              </p>
+                <br>
+              <img src="packet-switching.png" style="margin-left: 320px; width: 900px; height: 600px;" alt="">
+              <br><br><br><br>
+              <a class="btn btn-primary" style="width: 200px; height: 100px; font-size: 30px;" onclick="window.location.href ='index.html'">Ritorna alla home</a>
             </div>
           </div>
         </div>
